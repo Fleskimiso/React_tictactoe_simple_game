@@ -5,9 +5,61 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #551D59;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.App{
+  height: 100%;
+  position: relative;
+}
+
+
+.board{
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  transform: translateY(10%) ;
+  min-height: 300px;
+
+ /* display: inline-block; */
+}
+
+.row{ 
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  min-width: 100px;
+  min-height: 100px;
+}
+.cell {
+  border-style: solid;
+  border-width: 2px;
+  border-color: aqua;
+  background-color: #C41EAE;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+div.welcome{
+  text-align: center;
+}
+div.player{
+  text-align: center;
+}
+div.winner{
+  text-align: center;
+  font-size: 50px;
+  color: red;
+  font-family: 'Courier New', Courier, monospace;
 }

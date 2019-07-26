@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Board from './components/Board';
+import BoardContextProvider from './Context/BoardContext';
+import Info from './components/Info';
+import Result from './components/Result';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="welcome">Welcome to the tic tac toe game.</div>
+       <BoardContextProvider>
+         <Info/>
+       <Board/>
+        <Result/> 
+       </BoardContextProvider>
     </div>
   );
 }
